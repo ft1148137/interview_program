@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shaoxuan/Matrics_test
+CMAKE_SOURCE_DIR = /home/shaoxuan/interview_program/Matrics_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shaoxuan/Matrics_test
+CMAKE_BINARY_DIR = /home/shaoxuan/interview_program/Matrics_test
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/Matrics_test/CMakeFiles /home/shaoxuan/Matrics_test/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/interview_program/Matrics_test/CMakeFiles /home/shaoxuan/interview_program/Matrics_test/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/Matrics_test/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/interview_program/Matrics_test/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named matrics
+# Target rules for targets named vector_and_matrics
 
 # Build rule for target.
-matrics: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 matrics
-.PHONY : matrics
+vector_and_matrics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vector_and_matrics
+.PHONY : vector_and_matrics
 
 # fast build rule for target.
-matrics/fast:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/build
-.PHONY : matrics/fast
-
-#=============================================================================
-# Target rules for targets named vector
-
-# Build rule for target.
-vector: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vector
-.PHONY : vector
-
-# fast build rule for target.
-vector/fast:
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/build
-.PHONY : vector/fast
+vector_and_matrics/fast:
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/build
+.PHONY : vector_and_matrics/fast
 
 src/main.o: src/main.cpp.o
 
@@ -142,8 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/src/main.cpp.o
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -152,8 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/src/main.cpp.i
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -162,8 +147,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/src/main.cpp.s
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/matrics.o: src/matrics.cpp.o
@@ -172,7 +156,7 @@ src/matrics.o: src/matrics.cpp.o
 
 # target to build an object file
 src/matrics.cpp.o:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/src/matrics.cpp.o
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/matrics.cpp.o
 .PHONY : src/matrics.cpp.o
 
 src/matrics.i: src/matrics.cpp.i
@@ -181,7 +165,7 @@ src/matrics.i: src/matrics.cpp.i
 
 # target to preprocess a source file
 src/matrics.cpp.i:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/src/matrics.cpp.i
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/matrics.cpp.i
 .PHONY : src/matrics.cpp.i
 
 src/matrics.s: src/matrics.cpp.s
@@ -190,7 +174,7 @@ src/matrics.s: src/matrics.cpp.s
 
 # target to generate assembly for a file
 src/matrics.cpp.s:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/src/matrics.cpp.s
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/matrics.cpp.s
 .PHONY : src/matrics.cpp.s
 
 src/vector.o: src/vector.cpp.o
@@ -199,7 +183,7 @@ src/vector.o: src/vector.cpp.o
 
 # target to build an object file
 src/vector.cpp.o:
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/vector.cpp.o
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/vector.cpp.o
 .PHONY : src/vector.cpp.o
 
 src/vector.i: src/vector.cpp.i
@@ -208,7 +192,7 @@ src/vector.i: src/vector.cpp.i
 
 # target to preprocess a source file
 src/vector.cpp.i:
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/vector.cpp.i
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/vector.cpp.i
 .PHONY : src/vector.cpp.i
 
 src/vector.s: src/vector.cpp.s
@@ -217,7 +201,7 @@ src/vector.s: src/vector.cpp.s
 
 # target to generate assembly for a file
 src/vector.cpp.s:
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/src/vector.cpp.s
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/vector.cpp.s
 .PHONY : src/vector.cpp.s
 
 # Help Target
@@ -226,10 +210,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... matrics"
-	@echo "... vector"
+	@echo "... edit_cache"
+	@echo "... vector_and_matrics"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

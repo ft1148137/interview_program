@@ -1,4 +1,4 @@
-# Install script for directory: /home/shaoxuan/Matrics_test
+# Install script for directory: /home/shaoxuan/interview_program/Matrics_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shaoxuan/Matrics_test/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/shaoxuan/interview_program/Matrics_test/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

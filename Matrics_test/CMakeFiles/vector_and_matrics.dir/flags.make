@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/shaoxuan/Matrics_test/include 
+CXX_INCLUDES = -I/home/shaoxuan/interview_program/Matrics_test/include 
 

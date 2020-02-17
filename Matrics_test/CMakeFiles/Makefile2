@@ -54,82 +54,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shaoxuan/Matrics_test
+CMAKE_SOURCE_DIR = /home/shaoxuan/interview_program/Matrics_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shaoxuan/Matrics_test
+CMAKE_BINARY_DIR = /home/shaoxuan/interview_program/Matrics_test
 
 #=============================================================================
-# Target rules for target CMakeFiles/matrics.dir
+# Target rules for target CMakeFiles/vector_and_matrics.dir
 
 # All Build rule for target.
-CMakeFiles/matrics.dir/all:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/depend
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shaoxuan/Matrics_test/CMakeFiles --progress-num=1,2,3 "Built target matrics"
-.PHONY : CMakeFiles/matrics.dir/all
+CMakeFiles/vector_and_matrics.dir/all:
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/depend
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shaoxuan/interview_program/Matrics_test/CMakeFiles --progress-num=1,2,3,4 "Built target vector_and_matrics"
+.PHONY : CMakeFiles/vector_and_matrics.dir/all
 
 # Include target in all.
-all: CMakeFiles/matrics.dir/all
+all: CMakeFiles/vector_and_matrics.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/matrics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/Matrics_test/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/matrics.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/Matrics_test/CMakeFiles 0
-.PHONY : CMakeFiles/matrics.dir/rule
+CMakeFiles/vector_and_matrics.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/interview_program/Matrics_test/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector_and_matrics.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/interview_program/Matrics_test/CMakeFiles 0
+.PHONY : CMakeFiles/vector_and_matrics.dir/rule
 
 # Convenience name for target.
-matrics: CMakeFiles/matrics.dir/rule
+vector_and_matrics: CMakeFiles/vector_and_matrics.dir/rule
 
-.PHONY : matrics
-
-# clean rule for target.
-CMakeFiles/matrics.dir/clean:
-	$(MAKE) -f CMakeFiles/matrics.dir/build.make CMakeFiles/matrics.dir/clean
-.PHONY : CMakeFiles/matrics.dir/clean
+.PHONY : vector_and_matrics
 
 # clean rule for target.
-clean: CMakeFiles/matrics.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vector.dir
-
-# All Build rule for target.
-CMakeFiles/vector.dir/all:
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/depend
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shaoxuan/Matrics_test/CMakeFiles --progress-num=4,5,6 "Built target vector"
-.PHONY : CMakeFiles/vector.dir/all
-
-# Include target in all.
-all: CMakeFiles/vector.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/Matrics_test/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaoxuan/Matrics_test/CMakeFiles 0
-.PHONY : CMakeFiles/vector.dir/rule
-
-# Convenience name for target.
-vector: CMakeFiles/vector.dir/rule
-
-.PHONY : vector
+CMakeFiles/vector_and_matrics.dir/clean:
+	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/clean
+.PHONY : CMakeFiles/vector_and_matrics.dir/clean
 
 # clean rule for target.
-CMakeFiles/vector.dir/clean:
-	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/clean
-.PHONY : CMakeFiles/vector.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vector.dir/clean
+clean: CMakeFiles/vector_and_matrics.dir/clean
 
 .PHONY : clean
 

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shaoxuan/interview_program/Matrics_test/src/main.cpp
+matrics.h
+/home/shaoxuan/interview_program/Matrics_test/src/matrics.h
+vector.h
+/home/shaoxuan/interview_program/Matrics_test/src/vector.h
+iostream
+/home/shaoxuan/interview_program/Matrics_test/src/iostream
+
+/home/shaoxuan/interview_program/Matrics_test/src/matrics.cpp
+matrics.h
+/home/shaoxuan/interview_program/Matrics_test/src/matrics.h
+iostream
+/home/shaoxuan/interview_program/Matrics_test/src/iostream
+
+/home/shaoxuan/interview_program/Matrics_test/src/vector.cpp
+vector.h
+/home/shaoxuan/interview_program/Matrics_test/src/vector.h
+
+include/matrics.h
+vector
+-
+
+include/vector.h
+vector
+-
+iostream
+-
+

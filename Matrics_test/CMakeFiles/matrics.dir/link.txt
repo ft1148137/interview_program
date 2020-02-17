@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/matrics.dir/src/matrics.cpp.o CMakeFiles/matrics.dir/src/main.cpp.o  -o matrics 
