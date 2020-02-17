@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shaoxuan/Matrics_test/src/main.cpp
+matrics.h
+/home/shaoxuan/Matrics_test/src/matrics.h
+vector.h
+/home/shaoxuan/Matrics_test/src/vector.h
+
+/home/shaoxuan/Matrics_test/src/matrics.cpp
+matrics.h
+/home/shaoxuan/Matrics_test/src/matrics.h
+iostream
+/home/shaoxuan/Matrics_test/src/iostream
+
+include/matrics.h
+vector
+-
+
+include/vector.h
+vector
+-
+iostream
+-
+

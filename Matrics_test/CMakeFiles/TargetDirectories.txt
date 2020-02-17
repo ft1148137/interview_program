@@ -1,0 +1,4 @@
+/home/shaoxuan/Matrics_test/CMakeFiles/edit_cache.dir
+/home/shaoxuan/Matrics_test/CMakeFiles/rebuild_cache.dir
+/home/shaoxuan/Matrics_test/CMakeFiles/matrics.dir
+/home/shaoxuan/Matrics_test/CMakeFiles/vector.dir
