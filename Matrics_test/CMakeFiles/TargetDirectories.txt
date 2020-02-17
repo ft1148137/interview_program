@@ -1,3 +1,3 @@
-/home/shaoxuan/interview_program/Matrics_test/CMakeFiles/rebuild_cache.dir
 /home/shaoxuan/interview_program/Matrics_test/CMakeFiles/edit_cache.dir
-/home/shaoxuan/interview_program/Matrics_test/CMakeFiles/vector_and_matrics.dir
+/home/shaoxuan/interview_program/Matrics_test/CMakeFiles/rebuild_cache.dir
+/home/shaoxuan/interview_program/Matrics_test/CMakeFiles/vector_and_matrices.dir

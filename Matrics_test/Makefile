@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/shaoxuan/interview_program/Matrics_test
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vector_and_matrics
+# Target rules for targets named vector_and_matrices
 
 # Build rule for target.
-vector_and_matrics: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vector_and_matrics
-.PHONY : vector_and_matrics
+vector_and_matrices: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vector_and_matrices
+.PHONY : vector_and_matrices
 
 # fast build rule for target.
-vector_and_matrics/fast:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/build
-.PHONY : vector_and_matrics/fast
+vector_and_matrices/fast:
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/build
+.PHONY : vector_and_matrices/fast
 
 src/main.o: src/main.cpp.o
 
@@ -129,7 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -138,7 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -147,35 +147,35 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/matrics.o: src/matrics.cpp.o
+src/matrices.o: src/matrices.cpp.o
 
-.PHONY : src/matrics.o
+.PHONY : src/matrices.o
 
 # target to build an object file
-src/matrics.cpp.o:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/matrics.cpp.o
-.PHONY : src/matrics.cpp.o
+src/matrices.cpp.o:
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/matrices.cpp.o
+.PHONY : src/matrices.cpp.o
 
-src/matrics.i: src/matrics.cpp.i
+src/matrices.i: src/matrices.cpp.i
 
-.PHONY : src/matrics.i
+.PHONY : src/matrices.i
 
 # target to preprocess a source file
-src/matrics.cpp.i:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/matrics.cpp.i
-.PHONY : src/matrics.cpp.i
+src/matrices.cpp.i:
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/matrices.cpp.i
+.PHONY : src/matrices.cpp.i
 
-src/matrics.s: src/matrics.cpp.s
+src/matrices.s: src/matrices.cpp.s
 
-.PHONY : src/matrics.s
+.PHONY : src/matrices.s
 
 # target to generate assembly for a file
-src/matrics.cpp.s:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/matrics.cpp.s
-.PHONY : src/matrics.cpp.s
+src/matrices.cpp.s:
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/matrices.cpp.s
+.PHONY : src/matrices.cpp.s
 
 src/vector.o: src/vector.cpp.o
 
@@ -183,7 +183,7 @@ src/vector.o: src/vector.cpp.o
 
 # target to build an object file
 src/vector.cpp.o:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/vector.cpp.o
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/vector.cpp.o
 .PHONY : src/vector.cpp.o
 
 src/vector.i: src/vector.cpp.i
@@ -192,7 +192,7 @@ src/vector.i: src/vector.cpp.i
 
 # target to preprocess a source file
 src/vector.cpp.i:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/vector.cpp.i
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/vector.cpp.i
 .PHONY : src/vector.cpp.i
 
 src/vector.s: src/vector.cpp.s
@@ -201,7 +201,7 @@ src/vector.s: src/vector.cpp.s
 
 # target to generate assembly for a file
 src/vector.cpp.s:
-	$(MAKE) -f CMakeFiles/vector_and_matrics.dir/build.make CMakeFiles/vector_and_matrics.dir/src/vector.cpp.s
+	$(MAKE) -f CMakeFiles/vector_and_matrices.dir/build.make CMakeFiles/vector_and_matrices.dir/src/vector.cpp.s
 .PHONY : src/vector.cpp.s
 
 # Help Target
@@ -210,15 +210,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... vector_and_matrics"
+	@echo "... rebuild_cache"
+	@echo "... vector_and_matrices"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/matrics.o"
-	@echo "... src/matrics.i"
-	@echo "... src/matrics.s"
+	@echo "... src/matrices.o"
+	@echo "... src/matrices.i"
+	@echo "... src/matrices.s"
 	@echo "... src/vector.o"
 	@echo "... src/vector.i"
 	@echo "... src/vector.s"

@@ -7,16 +7,16 @@
 #IncludeRegexTransform: 
 
 /home/shaoxuan/interview_program/Matrics_test/src/main.cpp
-matrics.h
-/home/shaoxuan/interview_program/Matrics_test/src/matrics.h
+matrices.h
+/home/shaoxuan/interview_program/Matrics_test/src/matrices.h
 vector.h
 /home/shaoxuan/interview_program/Matrics_test/src/vector.h
 iostream
 /home/shaoxuan/interview_program/Matrics_test/src/iostream
 
-/home/shaoxuan/interview_program/Matrics_test/src/matrics.cpp
-matrics.h
-/home/shaoxuan/interview_program/Matrics_test/src/matrics.h
+/home/shaoxuan/interview_program/Matrics_test/src/matrices.cpp
+matrices.h
+/home/shaoxuan/interview_program/Matrics_test/src/matrices.h
 iostream
 /home/shaoxuan/interview_program/Matrics_test/src/iostream
 
@@ -24,7 +24,7 @@ iostream
 vector.h
 /home/shaoxuan/interview_program/Matrics_test/src/vector.h
 
-include/matrics.h
+include/matrices.h
 vector
 -
 

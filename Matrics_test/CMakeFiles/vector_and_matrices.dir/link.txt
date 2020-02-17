@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/vector_and_matrices.dir/src/vector.cpp.o CMakeFiles/vector_and_matrices.dir/src/main.cpp.o CMakeFiles/vector_and_matrices.dir/src/matrices.cpp.o  -o vector_and_matrices 

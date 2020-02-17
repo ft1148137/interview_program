@@ -4,6 +4,6 @@ project(matrics_test)
 include_directories(
 include
 )
-add_executable(vector_and_matrics src/vector.cpp src/main.cpp src/matrics.cpp)
+add_executable(vector_and_matrices src/vector.cpp src/main.cpp src/matrices.cpp)
 
 
